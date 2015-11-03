@@ -4,7 +4,7 @@ branches:
   - master
 before_script: bash ./app/bin/prepare.sh
 script:
-- ls -al sample.json
+- ls -al app/sample.json
 after_success: bash ./app/bin/deploy.sh
 env:
   global:
