@@ -12,10 +12,7 @@ if [[ "master" != "$TRAVIS_BRANCH" ]]; then
 	exit
 fi
 
-
-# commit to gh-pages
-rm -rf .git
-rm -r .gitignore
+cd app
 
 echo ".travis.yml
 bin

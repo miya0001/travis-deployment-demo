@@ -6,7 +6,7 @@ var rename = require('gulp-rename');
 
 gulp.task('default', function () {
     var csvParseOptions = {}; //based on options specified here : http://csv.adaltas.com/parse/
-    gulp.src('sample.csv')
+    gulp.src('../sample.csv')
         .pipe(csv2json(csvParseOptions))
         .pipe(rename({extname: '.json'}))
         .pipe(gulp.dest('.'));
