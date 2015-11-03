@@ -1,0 +1,26 @@
+{
+  "name": "travis-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "build": "./node_modules/gulp/bin/gulp.js",
+    "start": "./node_modules/http-server/bin/http-server -c1 -o",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miya0001/travis-deployment-demo.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miya0001/travis-deployment-demo/issues"
+  },
+  "homepage": "https://github.com/miya0001/travis-deployment-demo#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-csv2json": "^0.2.5",
+    "http-server": "^0.8.5"
+  }
+}

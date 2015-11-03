@@ -1,0 +1,11 @@
+language: node_js
+branches:
+  only:
+    - master
+before_script: bash ./bin/prepare.sh
+script:
+    - ls -al sample.json
+after_success: bash ./bin/deploy.sh
+env:
+  global:
+    secure: lDi1E6qowIoL0cw/Avl6tkVA6GzmfIv1PbkT+I1grQ5The66/C8wxAH9IOeJRyM773TQwjH74nE+rvDFWjvU54EufEy4WJDgTCIprEfUe050ERT8P6UBWI8LYGhvIsF5GGOawilEgJIqivJrpIkZkNA/8pFEtMsNSsH2kugOm3AwIb8pWwIKxM3+gz434jF/5Rx6tQhvcUfcNIoI6sIC4ARTU3DOeqbeTd7ctHnsUAueyfAKifvYKhaDbaaJZmmFl6rzn/RYFVQI2c2o/+oqT0WoR4PKnVIXMTKNtspTAouSwkDwwP7sVn/Mps0dAw7pAsj/pr3SMzS9eW2MD5iNuKFni4kIUP/xYC6W1RdVtQ0WT3u70F2huNoBjp2WZvIxXlKRk/6R8Y9lOkpecN5J+7yq7IxUhiYjMGTQGEMlJPCubzuQ9NEDmXf7XkygTzZhDArYHWQu4cZfbuEBJf42r71kedzMB09NU+hgQBgudzIFe9lutBbKuMEC8iUQxq4Z1luJKg4utvtqWGp3On8ds9jPESkqd28XeVs7WAlvdhlL3xFSnJHsZaqKWjE3eL31xBfHO3rt1ujTl7/q9QQSYwoWzaVSE4j/qmzIEuxdSBQZTfAOGRtvkftpLaF8Hf0D7u1qwvTn3zB1zHnNOW0my0OSWSmPU11L8wkf71dR/Yc=
