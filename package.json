@@ -21,6 +21,7 @@
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-csv2json": "^0.2.5",
+    "gulp-rename": "^1.2.2",
     "http-server": "^0.8.5"
   }
 }
