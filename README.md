@@ -8,4 +8,6 @@
 * JSONが問題なく生成されているかを確認
 * `gh-pages`ブランチに`push`
 
+デプロイ後のサイトは以下のように確認できます。
+
 https://miya0001.github.io/travis-deployment-demo
