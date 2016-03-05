@@ -1,0 +1,36 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
+  <script type="text/javascript"
+        src="https://www.google.com/jsapi?autoload={
+          'modules':[{
+            'name':'visualization',
+            'version':'1',
+            'packages':['corechart']
+          }]
+        }"></script>
+
+  <script type="text/javascript">
+  jQuery.getJSON( "sample.json", function( json ){
+        var data = [['Year', '人口']];
+
+        for ( var i=0; i<json.length; i++ ) {
+            data.push( [ json[i].year, parseInt(json[i].population) ] );
+        }
+
+        var options = {
+          title: '年度別人口',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(google.visualization.arrayToDataTable( data ), options);
+  } );
+  </script>
+</head>
+<body>
+  <div id="curve_chart" style="width: 900px; height: 500px"></div>
+</body>
+</html>
